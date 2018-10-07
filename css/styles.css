@@ -1,0 +1,537 @@
+
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  }
+
+  /*-------------------fonts-----------------------*/
+
+  @font-face {
+    font-family: YesevaOne;
+    src: url(../fonts/YesevaOne-Regular_v2.otf);
+   }
+
+   @font-face {
+     font-family: GentiumBasic;
+     src: url(../fonts/GenBkBasB.ttf);
+    }
+
+    @font-face {
+      font-family: LatoRegular;
+      src: url(../fonts/Lato-Regular.ttf);
+     }
+
+     @font-face {
+       font-family: OpenSans;
+       src: url(../fonts/OpenSans-Regular.ttf);
+      }
+
+/*----------------------------------------------*/
+
+  body {
+    width: 1600px;
+    margin: 0 auto;
+    background: rgb(151,154,170);
+  }
+
+ .wrapper {
+   width: 1600px;
+   min-height: 400px;
+   padding: 0 216px;
+   box-sizing: border-box;
+  }
+
+/*--------------header------------------------*/
+
+header {
+  height: 110px;
+  width: 1600px;
+  position: absolute;
+  z-index: 1;
+  left:0;
+  top:0;
+  color: rgb(255,255,255);
+  text-align: center;
+  box-shadow: inset 0px 35px 50px rgba(0,0,0,0.5);
+  user-select: none;
+}
+
+.logo {
+  font-family: YesevaOne, Georgia, serif;
+  font-size: 2.3em;
+  float:left;
+  background: url('../img/logo-pattern.jpg') repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-left: 180px;
+  margin-top: 42px;
+  cursor: default;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 53px 23px;
+  box-sizing: border-box;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: GentiumBasic, Georgia, serif;
+  font-size: 1.2em;
+}
+
+nav li :hover {
+  border-top: 5px solid white;
+  padding-top: 48px;
+}
+
+header>* {
+  display: inline-block;
+}
+
+.social-network-icons a {
+  font-size: 1.2em;
+  color: rgb(218,179,62);
+  text-decoration: none;
+  letter-spacing: 1em;
+}
+
+.social-network-icons > a :hover {
+  color: rgb(255,255,255);
+}
+
+/*--------------promo------------------------*/
+
+.promo{
+  min-height:750px;
+  max-height: 1600px;
+  max-width: 1600px;
+  position: relative;
+  z-index: 0;
+  background: url('../img/promoBackground.png');
+  background-size: cover;
+  text-align: center;
+  user-select: none;
+  overflow: hidden;
+}
+
+h1{
+  visibility: hidden;
+}
+
+h2 {
+  font-family: YesevaOne, Georgia, serif;
+  color: rgb(255, 255, 255);
+  font-size: 5.5em;
+  padding-top: 217px;
+  text-shadow: 20px 20px 50px rgba(0,0,0,0.2);
+  cursor: default;
+}
+
+h2::after {
+  display: block;
+  content: url('../img/promoDivider.png');
+}
+
+button{
+  width: 226px;
+  height: 55px;
+  font-family: LatoRegular, Verdana, sans-serif;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  border: 1px solid;
+  margin: 17px 27px;
+  cursor: pointer;
+}
+
+button:first-of-type{
+  background-color:rgba(0, 0, 0, 0.5);
+  border-color: rgb(0, 0, 0);
+}
+
+button:last-of-type{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: rgb(255, 255, 255);
+}
+
+button:hover{
+  color: rgb(218,179,62);
+  box-shadow: inset 20px 35px 50px rgba(0,0,0,0.3);
+}
+
+/*----------------about-----------------------*/
+
+.about{
+  text-align: center;
+  color: rgba(204,153,0,0.6);
+  min-height: 710px;
+  max-height: 1500px;
+  width: 1600px;
+  background: url('../img/pattern1.png') repeat;
+  overflow: hidden;
+}
+
+img[alt='main dish']{
+  display: inline-block;
+  float: right;
+  height:600px;
+  width: 600px;
+  padding-top: 75px;
+}
+
+img[alt='chief-cooker']{
+  height: 200px;
+  width: 270px;
+  margin: 30px auto;
+  padding-left: 70px;
+  box-sizing: border-box;
+}
+
+.about article {
+  display: inline-block;
+  width: 430px;
+  padding: 100px 0;
+}
+
+h3 {
+  font-style: YesevaOne, Georgia, serif;
+  font-size: 2.7em;
+  font-weight: bold;
+}
+
+.about h3::after {
+  display: block;
+  content: url('../img/textDividerOrange.png');
+}
+
+p{
+  text-align: center;
+  font-family: LatoRegular, 'lucida Sans Unicode', sans-serif;
+  color: rgb(0,0,0);
+  font-size: 0.95em;
+  line-height: 1.6em;
+  padding: 15px;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+/*--------ingredients-----------------------*/
+
+.ingredients{
+  background: url('../img/ingredientsBackground.png');
+  background-size: cover;
+  min-height: 758px;
+  max-height: 1500px;
+  width: 1600px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  overflow: hidden;
+}
+
+.ingredients img{
+  margin: 60px 10px 0 10px;
+  border-radius: 50%;
+  border: 4px solid rgb(124,124, 124);
+  user-select: none;
+}
+
+.box{
+  width: 570px;
+  min-height: 557px;
+  background: url('../img/IngredientsTextBackground.png');
+  background-size: cover;
+  display: inline-block;
+  float: right;
+  padding: 70px 65px;
+  box-sizing: border-box;
+  margin: 100px 0;
+}
+
+h3::after {
+  display: block;
+  content: url('../img/textDividerWhite.png');
+}
+
+.ingredients p{
+  color: rgb(255, 255, 255);
+}
+
+/*------------menu-------------------*/
+
+.menu .wrapper{
+  padding-right: 0;
+}
+
+.menu{
+  background: url('../img/pattern2.png') repeat;
+  text-align: center;
+  max-width: 1600px;
+  min-height: 994px;
+  max-height: 3000px;
+  overflow: hidden;
+  color: rgb(218,179,62);
+}
+
+.menu-column {
+  width: 430px;
+  min-height: 794px;
+  max-height: 1700px;
+  display: inline-block;
+  float: left;
+  padding: 50px 80px;
+  overflow: hidden;
+}
+
+.menu-column>article>article{
+  margin: 25px 0;
+}
+
+.menu-column>article{
+  margin: 40px 0;
+}
+
+.special{
+  position: relative;
+  border: 1px solid rgba(218,179,62,0.6);
+}
+
+.special::before{
+  top: -23px;
+  right: 0;
+  position: absolute;
+  content: 'special';
+  background-color: rgba(218,179,62, 0.6);
+  padding: 2px 7px;
+  color: rgb(255, 255, 255);
+}
+
+.menu h3::after {
+  display: block;
+  content: url('../img/textDividerOrange.png');
+}
+
+h4{
+  font-family: YesevaOne, Georgia, serif;
+  font-size: 1.3em;
+}
+
+.name{
+  display: inline-block;
+  float: left;
+}
+
+.price{
+  display: inline-block;
+  float: right;
+}
+
+.menu p{
+  text-align: left;
+  padding: 0 0;
+}
+
+hr {
+  clear:both;
+  display:block;
+  width: 100%;
+  background-color:rgba(218,179,62,0.6);
+  height: 1px;
+  margin: 20px 0;
+}
+
+/*--------------reviews-------------------*/
+
+.reviews {
+  background: url('../img/reviewsBackground.png');
+  background-size: cover;
+  text-align: center;
+  color: rgb(255,255,255);
+  width: 1600px;
+  min-height: 758px;
+  max-height: 1600px;
+  overflow: hidden;
+}
+
+.reviews article {
+  background: url('../img/ReviewsTextBackground.png');
+  background-size: cover;
+  margin: 100px 200px;
+  width: 770px;
+  min-height: 557px;
+  padding: 70px 50px;
+  box-sizing: border-box;
+}
+
+blockquote{
+  position: relative;
+}
+
+blockquote:before {
+  content: url('../img/quote.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.reviews p{
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
+
+.reviews blockquote>p {
+  color: rgb(255,255,255);
+  font-family: GentiumBasic, Georgia, serif;
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+
+/*------------reservation-------------------*/
+
+.reservation{
+  background: url('../img/pattern1.png');
+  width: 1600px;
+  min-height: 710px;
+  max-height: 1700px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.reservation h3::after {
+  display: block;
+  content: url('../img/textDividerOrange.png');
+}
+
+.reservation h3{
+  color: rgb(218,179,62);
+}
+
+.reservation img {
+  float: left;
+  width: 270px;
+  height: 507px;
+  padding: 100px 15px;
+}
+
+.reservation article{
+  margin: 85px 0 85px 65px;
+  width: 460px;
+  float: left;
+}
+
+form{
+  font-family: OpenSans, sans-serif;
+  font-size: 0.9em;
+  columns: 2;
+  text-align: left;
+  user-select: none;
+  margin: 20px 0;
+}
+
+label {
+  font-weight: bold;
+  color: rgb(218,179,62);
+}
+
+form input{
+  font-weight: normal;
+  font-style: italic;
+  display: block;
+  width: 200px;
+  height: 35px;
+  border: 1px solid rgb(124,124,124);
+  margin: 0 5px 25px 5px;
+}
+
+[name='Date']::-webkit-calendar-picker-indicator {
+  color: transparent;
+  opacity: 1;
+  background: url('../img/calendar-icon.jpg') no-repeat center;
+  background-size: contain;
+}
+
+input:focus{
+  border: 1px solid rgb(218,179,62);
+}
+
+[type="submit"] {
+  font-family: OpenSans, sans-serif;
+  background-color: rgb(218,179,62);
+  color: rgb(255,255,255);
+  padding: 10px 60px;
+  cursor:pointer;
+  user-select: none;
+}
+
+[type="submit"]:hover {
+  font-size: 1.2em;
+  color: rgb(0,0,0);
+  font-weight: bold;
+}
+
+/*--------------footer----------*/
+
+footer{
+  max-height: 320px;
+  width: 1600px;
+  text-align: center;
+  color: rgb(255,255,255);
+  background-color: rgb(0,0,0);
+  padding-left: 200px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+footer article {
+  width: 30%;
+  float: left;
+  box-sizing: border-box;
+}
+
+footer p {
+  font-family: OpenSans, sans-serif;
+  font-size: 0.9em;
+  color: rgb(255, 255, 255);
+}
+
+b {
+  font-weight: 800;
+}
+
+footer h4::after{
+  display: block;
+  content: url('../img/textDividerWhite.png');
+  padding: 10px;
+}
+
+.container {
+  min-height: 300px;
+  height: 100%;
+  margin: 55px 0 -120px 0;
+}
+
+.ContactLinks, .PaySystems{
+  user-select: none;
+  height: 290px;
+}
+
+.ContactLinks i, .PaySystems i {
+  font-size: 1em;
+  color: rgb(255,255,255);
+  text-decoration: none;
+  letter-spacing: 0.4em;
+}
+
+.ContactLinks  > a :hover ,.PaySystems > a :hover{
+  color: rgb(218,179,62);
+}
+
+/*----------------------------------------*/
